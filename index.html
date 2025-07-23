@@ -21,26 +21,76 @@
       margin: 10px 0 30px;
     }
     a {
-      margin: 0 15px;
       text-decoration: none;
       color: #2980b9;
-      font-size: 22px;
     }
     a:hover {
       color: #1a5276;
+    }
+    .icons a {
+      margin: 0 15px;
+      font-size: 24px;
+    }
+    #details {
+      display: none;
+      text-align: left;
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 16px;
+      line-height: 1.6;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
   <h1>Dani Mejía Valencia</h1>
-  <p>Financial Engineer | Data Science | Clean Energy</p>
-  <div>
-    <a href="https://github.com/Danielmejiava" target="_blank">
+  
+  <p>
+    I'm a <a href="#" onclick="toggleDetails()">Financial Engineer</a> passionate about data science and clean energy.<br>
+    I’m currently building skills in Python, SQL, and machine learning to solve environmental and financial challenges.
+  </p>
+
+  <div id="details">
+    <h3>Occupational Profile</h3>
+    <p>
+      A Financial Engineer can work across all sectors of the economy — including production, mining, banking, financial services, consultancy, and more.
+      The roles they are qualified for include:
+    </p>
+    <ul>
+      <li>Financial management analyst in public and private companies</li>
+      <li>Financial analyst in brokerage firms, banks, trading desks, cooperatives, and trust companies</li>
+      <li>Financial manager</li>
+      <li>Risk control manager</li>
+      <li>Stock market analyst</li>
+      <li>Finance or insurance researcher</li>
+      <li>Risk and market strategy analyst</li>
+    </ul>
+
+    <h4>Knowledge Areas</h4>
+    <ul>
+      <li><strong>Broad Field:</strong> Business Administration and Law</li>
+      <li><strong>Specific Field:</strong> Business and Commercial Education</li>
+      <li><strong>Detailed Field:</strong> Financial Management, Banking Administration, and Insurance</li>
+    </ul>
+  </div>
+
+  <div class="icons">
+    <a href="https://github.com/Danielmejiava" target="_blank" title="GitHub">
       <i class="fab fa-github"></i>
     </a>
-    <a href="https://linkedin.com/in/danielmejiava" target="_blank">
+    <a href="https://linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" title="LinkedIn">
       <i class="fab fa-linkedin"></i>
     </a>
   </div>
+
+  <script>
+    function toggleDetails() {
+      const details = document.getElementById("details");
+      details.style.display = (details.style.display === "none") ? "block" : "none";
+    }
+  </script>
 </body>
 </html>
