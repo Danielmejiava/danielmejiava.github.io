@@ -10,20 +10,25 @@
       background-color: #ffffff;
       color: #2c3e50;
       text-align: center;
-      padding: 100px 20px;
+      padding: 80px 20px;
     }
     h1 {
       font-size: 36px;
-      margin-bottom: 10px;
+      font-weight: 700;
+      margin-bottom: 15px;
     }
     h2 {
       font-size: 22px;
+      font-weight: 500;
       margin-bottom: 40px;
-      color: #34495e;
     }
     .clickable {
       color: #2980b9;
       cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .clickable:hover {
       text-decoration: underline;
     }
     .icons a {
@@ -40,14 +45,18 @@
       max-width: 700px;
       margin: 40px auto;
       text-align: left;
-      background-color: #f4f6f8;
-      padding: 30px;
+      background-color: #f9f9f9;
+      padding: 25px 30px;
       border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       font-size: 16px;
       line-height: 1.6;
     }
     ul {
       padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -55,7 +64,7 @@
 
   <h1>Daniel Mejía Valencia</h1>
   <h2>
-    <span class="clickable" onclick="toggleDetails()">Financial Engineer</span> | Data Science
+    <a class="clickable" onclick="toggleDetails()">Financial Engineer</a> | Data Science
   </h2>
 
   <div class="icons">
