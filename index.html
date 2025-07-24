@@ -23,22 +23,22 @@
       margin-bottom: 40px;
     }
     .clickable {
-      color: #2980b9;
+      color: #0366d6; /* GitHub Blue */
       cursor: pointer;
-      text-decoration: none;
       font-weight: 600;
+      text-decoration: none; /* removes the underline */
     }
     .clickable:hover {
-      text-decoration: underline;
+      text-decoration: underline; /* appears only on hover */
     }
     .icons a {
       margin: 0 15px;
       font-size: 28px;
-      color: #2980b9;
+      color: #0366d6;
       text-decoration: none;
     }
     .icons a:hover {
-      color: #1a5276;
+      color: #023e7d;
     }
     #details {
       display: none;
@@ -64,7 +64,7 @@
 
   <h1>Daniel Mejía Valencia</h1>
   <h2>
-    <a class="clickable" onclick="toggleDetails()">Financial Engineer</a> | Data Science
+    <span class="clickable" onclick="toggleDetails()">Financial Engineer</span> | Data Science
   </h2>
 
   <div class="icons">
