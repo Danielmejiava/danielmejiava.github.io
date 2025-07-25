@@ -78,7 +78,7 @@
     <a href="https://linkedin.com/in/danielmejiava" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
 
-  <!-- Financial Engineer Details -->
+  <!-- Financial Engineer Section -->
   <div id="details" class="hidden-section">
     <h3>Occupational Profile</h3>
     <p>The field of action for a Financial Engineer spans all sectors of the economy — including production, mining, banking, financial services, consulting, and more. A Financial Engineer may professionally develop in the following roles:</p>
@@ -100,7 +100,7 @@
     </ul>
   </div>
 
-  <!-- Projects Section (Initially Hidden) -->
+  <!-- Projects Section -->
   <section id="projects" class="hidden-section">
     <h3>📈 Projects</h3>
 
@@ -117,12 +117,26 @@
   <script>
     function toggleDetails() {
       const details = document.getElementById("details");
-      details.style.display = details.style.display === "none" ? "block" : "none";
+      const projects = document.getElementById("projects");
+
+      if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+        projects.style.display = "none";
+      } else {
+        details.style.display = "none";
+      }
     }
 
     function toggleProjects() {
+      const details = document.getElementById("details");
       const projects = document.getElementById("projects");
-      projects.style.display = projects.style.display === "none" ? "block" : "none";
+
+      if (projects.style.display === "none" || projects.style.display === "") {
+        projects.style.display = "block";
+        details.style.display = "none";
+      } else {
+        projects.style.display = "none";
+      }
     }
   </script>
 
