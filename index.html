@@ -40,7 +40,7 @@
     .icons a:hover {
       color: #023e7d;
     }
-    #details {
+    .hidden-section {
       display: none;
       max-width: 700px;
       margin: 40px auto;
@@ -51,9 +51,6 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       font-size: 16px;
       line-height: 1.6;
-    }
-    section {
-      margin-top: 60px;
     }
     section h4 {
       margin-bottom: 10px;
@@ -71,7 +68,10 @@
 <body>
 
   <h1>Daniel Mejía Valencia</h1>
-  <h2><span class="clickable" onclick="toggleDetails()">Financial Engineer</span> | Exploring Data with Python</h2>
+  <h2>
+    <span class="clickable" onclick="toggleDetails()">Financial Engineer</span> |
+    <span class="clickable" onclick="toggleProjects()">Exploring Data with Python</span>
+  </h2>
 
   <div class="icons">
     <a href="https://github.com/Danielmejiava" target="_blank"><i class="fab fa-github"></i></a>
@@ -79,7 +79,7 @@
   </div>
 
   <!-- Financial Engineer Details -->
-  <div id="details">
+  <div id="details" class="hidden-section">
     <h3>Occupational Profile</h3>
     <p>The field of action for a Financial Engineer spans all sectors of the economy — including production, mining, banking, financial services, consulting, and more. A Financial Engineer may professionally develop in the following roles:</p>
     <ul>
@@ -100,11 +100,11 @@
     </ul>
   </div>
 
-  <!-- Project Section -->
-  <section>
+  <!-- Projects Section (Initially Hidden) -->
+  <section id="projects" class="hidden-section">
     <h3>📈 Projects</h3>
 
-    <div style="max-width: 700px; margin: auto;">
+    <div>
       <h4>Analysis of Temporary Student Visas in Australia</h4>
       <p>
         Analysed trends in student visa arrivals and departures using Python and public data. Created visual comparisons of participation rates, highlighting the impact of global events on international education.
@@ -116,8 +116,13 @@
 
   <script>
     function toggleDetails() {
-      const el = document.getElementById("details");
-      el.style.display = el.style.display === "none" ? "block" : "none";
+      const details = document.getElementById("details");
+      details.style.display = details.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleProjects() {
+      const projects = document.getElementById("projects");
+      projects.style.display = projects.style.display === "none" ? "block" : "none";
     }
   </script>
 
