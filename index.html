@@ -2,143 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Mejía Valencia | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #2c3e50;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding-top: 40px;
+    }
+    .header {
       text-align: center;
-      padding: 80px 20px;
-    }
-    h1 {
-      font-size: 36px;
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
-    h2 {
-      font-size: 22px;
-      font-weight: 500;
       margin-bottom: 30px;
     }
-    .clickable {
-      color: #0366d6;
-      font-weight: 600;
+    .header h1 {
+      font-size: 2.5rem;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .card-header {
       cursor: pointer;
+    }
+    .social-links a {
+      margin: 0 10px;
       text-decoration: none;
     }
-    .clickable:hover {
-      text-decoration: underline;
-    }
-    .icons a {
-      margin: 0 15px;
-      font-size: 28px;
-      color: #0366d6;
-      text-decoration: none;
-    }
-    .icons a:hover {
-      color: #023e7d;
-    }
-    .hidden-section {
-      display: none;
-      max-width: 700px;
-      margin: 40px auto;
-      text-align: left;
-      background-color: #f9f9f9;
-      padding: 25px 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    section h4 {
-      margin-bottom: 10px;
-    }
-    section a {
-      color: #0366d6;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    section a:hover {
-      text-decoration: underline;
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
-  <h1>Daniel Mejía Valencia</h1>
-  <h2>
-    <span class="clickable" onclick="toggleDetails()">Financial Engineer</span> |
-    <span class="clickable" onclick="toggleProjects()">Exploring Data with Python</span>
-  </h2>
-
-  <div class="icons">
-    <a href="https://github.com/Danielmejiava" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/danielmejiava" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
-
-  <!-- Financial Engineer Section -->
-  <div id="details" class="hidden-section">
-    <h3>Occupational Profile</h3>
-    <p>The field of action for a Financial Engineer spans all sectors of the economy — including production, mining, banking, financial services, consulting, and more. A Financial Engineer may professionally develop in the following roles:</p>
-    <ul>
-      <li>Financial management analyst in public and private companies</li>
-      <li>Financial analyst in brokerage firms, banks, money desks, cooperatives, and fiduciary entities</li>
-      <li>Financial Manager</li>
-      <li>Risk Control Manager</li>
-      <li>Stock Market Analyst</li>
-      <li>Researcher in the finance or insurance sector</li>
-      <li>Risk and market strategy analyst</li>
-    </ul>
-
-    <h3>Knowledge Areas</h3>
-    <ul>
-      <li><strong>Broad Field:</strong> Business Administration and Law</li>
-      <li><strong>Specific Field:</strong> Business and Commercial Education</li>
-      <li><strong>Detailed Field:</strong> Financial Management, Banking, and Insurance Administration</li>
-    </ul>
-  </div>
-
-  <!-- Projects Section -->
-  <section id="projects" class="hidden-section">
-    <h3>📈 Projects</h3>
-
-    <div>
-      <h4>Analysis of Temporary Student Visas in Australia</h4>
-      <p>
-        Analysed trends in student visa arrivals and departures using Python and public data. Created visual comparisons of participation rates, highlighting the impact of global events on international education.
-      </p>
-      <a href="https://github.com/Danielmejiava/danielmejiava.github.io/blob/main/studentVisaArDp.ipynb" target="_blank">📁 View on GitHub</a><br>
-      <a href="https://colab.research.google.com/github/Danielmejiava/danielmejiava.github.io/blob/main/studentVisaArDp.ipynb" target="_blank">🚀 Open in Google Colab</a>
+  <div class="container">
+    <div class="header">
+      <h1>Daniel Mejía Valencia</h1>
+      <p>Financial Engineer | Data Science Enthusiast</p>
+      <div class="social-links">
+        <a href="https://github.com/Danielmejiava" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/danielmejiava" target="_blank">LinkedIn</a>
+      </div>
     </div>
-  </section>
 
-  <script>
-    function toggleDetails() {
-      const details = document.getElementById("details");
-      const projects = document.getElementById("projects");
+    <div class="accordion" id="portfolioAccordion">
 
-      if (details.style.display === "none" || details.style.display === "") {
-        details.style.display = "block";
-        projects.style.display = "none";
-      } else {
-        details.style.display = "none";
-      }
-    }
+      <!-- Financial Engineer -->
+      <div class="card">
+        <div class="card-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button">Financial Engineer</button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#portfolioAccordion">
+          <div class="card-body">
+            <p>Financial Engineer with a background in statistical modelling and data interpretation. My academic training combined financial theory with practical programming skills.</p>
+          </div>
+        </div>
+      </div>
 
-    function toggleProjects() {
-      const details = document.getElementById("details");
-      const projects = document.getElementById("projects");
+      <!-- Exploring Data with Python -->
+      <div class="card">
+        <div class="card-header" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button">Exploring Data with Python</button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#portfolioAccordion">
+          <div class="card-body">
+            <p>In this section, I showcase real-world data analysis projects using Python libraries such as Pandas, Matplotlib, and Plotly to extract insights from complex datasets.</p>
+            <ul>
+              <li><a href="https://colab.research.google.com/drive/1NUgzbiiImzHT1pcuWXcu4De_eHuzorlx?usp=sharing" target="_blank">📊 Student Visa Arrivals and Departures Project</a></li>
+              <li><a href="https://colab.research.google.com/drive/1S84N8RXXXtB9uBbNPcMaP6k3xBp7cIJF?usp=sharing" target="_blank">📈 Workforce in Brisbane Project</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      if (projects.style.display === "none" || projects.style.display === "") {
-        projects.style.display = "block";
-        details.style.display = "none";
-      } else {
-        projects.style.display = "none";
-      }
-    }
-  </script>
+    </div>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
