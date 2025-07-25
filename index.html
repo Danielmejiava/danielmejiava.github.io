@@ -1,88 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Mejía Valencia | Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      padding-top: 40px;
-    }
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .header h1 {
-      font-size: 2.5rem;
-    }
-    .card {
-      margin-bottom: 20px;
-    }
-    .card-header {
-      cursor: pointer;
-    }
-    .social-links a {
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .section-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>Daniel Mejía Valencia</h1>
-      <p>Financial Engineer | Data Science Enthusiast</p>
-      <div class="social-links">
-        <a href="https://github.com/Danielmejiava" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/danielmejiava" target="_blank">LinkedIn</a>
-      </div>
-    </div>
+<!-- Projects Section -->
+<section id="projects" class="hidden-section">
+  <h3>📈 Projects</h3>
 
-    <div class="accordion" id="portfolioAccordion">
-
-      <!-- Financial Engineer -->
-      <div class="card">
-        <div class="card-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link" type="button">Financial Engineer</button>
-          </h2>
-        </div>
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#portfolioAccordion">
-          <div class="card-body">
-            <p>Financial Engineer with a background in statistical modelling and data interpretation. My academic training combined financial theory with practical programming skills.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Exploring Data with Python -->
-      <div class="card">
-        <div class="card-header" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button">Exploring Data with Python</button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#portfolioAccordion">
-          <div class="card-body">
-            <p>In this section, I showcase real-world data analysis projects using Python libraries such as Pandas, Matplotlib, and Plotly to extract insights from complex datasets.</p>
-            <ul>
-              <li><a href="https://colab.research.google.com/drive/1NUgzbiiImzHT1pcuWXcu4De_eHuzorlx?usp=sharing" target="_blank">📊 Student Visa Arrivals and Departures Project</a></li>
-              <li><a href="https://colab.research.google.com/drive/1S84N8RXXXtB9uBbNPcMaP6k3xBp7cIJF?usp=sharing" target="_blank">📈 Workforce in Brisbane Project</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
+  <div>
+    <h4>Analysis of Temporary Student Visas in Australia</h4>
+    <p>
+      Analysed trends in student visa arrivals and departures using Python and public data. Created visual comparisons of participation rates, highlighting the impact of global events on international education.
+    </p>
+    <a href="https://github.com/Danielmejiava/danielmejiava.github.io/blob/main/studentVisaArDp.ipynb" target="_blank">📁 View on GitHub</a><br>
+    <a href="https://colab.research.google.com/github/Danielmejiava/danielmejiava.github.io/blob/main/studentVisaArDp.ipynb" target="_blank">🚀 Open in Google Colab</a>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+  <div style="margin-top: 40px;">
+    <h4>Workforce Trends in Greater Brisbane</h4>
+    <p>
+      Explored the employment trends of full-time and part-time roles across genders in Greater Brisbane. Used public datasets to visualise the gender gap in workforce participation over time using Python.
+    </p>
+    <a href="https://github.com/Danielmejiava/danielmejiava.github.io/blob/main/WorkforceBrisbane.ipynb" target="_blank">📁 View on GitHub</a><br>
+    <a href="https://colab.research.google.com/drive/1S84N8RXXXtB9uBbNPcMaP6k3xBp7cIJF?usp=sharing" target="_blank">🚀 Open in Google Colab</a>
+  </div>
+</section>
