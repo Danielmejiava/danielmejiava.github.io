@@ -70,7 +70,8 @@
   <h1>Daniel Mejía Valencia</h1>
   <h2>
     <span class="clickable" onclick="toggleDetails()">Financial Engineer</span> |
-    <span class="clickable" onclick="toggleProjects()">Portfolio</span>
+    <span class="clickable" onclick="toggleProjects()">Portfolio</span> |
+    <span class="clickable" onclick="toggleResume()">Resume</span>
   </h2>
 
   <div class="icons">
@@ -106,56 +107,71 @@
 
     <div>
       <h4>Analysis of Temporary Student Visas in Australia</h4>
-      <p>
-        Analysed trends in student visa arrivals and departures using Python and public data. Created visual comparisons of participation rates, highlighting the impact of global events on international education.
-      </p>
+      <p>Analysed trends in student visa arrivals and departures using Python and public data. Created visual comparisons of participation rates, highlighting the impact of global events on international education.</p>
       <a href="https://colab.research.google.com/github/Danielmejiava/danielmejiava.github.io/blob/main/studentVisaArDp.ipynb" target="_blank">🚀 Open in Google Colab</a><br>
       <a href="https://github.com/Danielmejiava/danielmejiava.github.io/blob/main/studentVisaArDp.ipynb" target="_blank">📁 View on GitHub</a>
     </div>
 
     <div>
       <h4>Employment Trends in Greater Brisbane</h4>
-      <p>
-        This project examines trends in full-time employment for men and women in Greater Brisbane. It highlights the gender gap and the participation of women in part-time roles while analysing the stability of employment trends across time.
-      </p>
+      <p>This project examines trends in full-time employment for men and women in Greater Brisbane. It highlights the gender gap and the participation of women in part-time roles while analysing the stability of employment trends across time.</p>
       <a href="https://colab.research.google.com/drive/1S84N8RXXXtB9uBbNPcMaP6k3xBp7cIJF?usp=sharing" target="_blank">🚀 Open in Google Colab</a><br>
       <a href="https://github.com/Danielmejiava/danielmejiava.github.io/blob/main/WorkforceBrisbane.ipynb" target="_blank">📁 View on GitHub</a>
     </div>
 
     <div>
       <h4>Repayment Progress vs Total Principal (Colombia)</h4>
-      <p>
-        Explores the relationship between total loan principal and repayment progress for Colombian borrowers. Uses a scatterplot to identify significant contributors, repayment performance, and outliers in the dataset.
-      </p>
+      <p>Explores the relationship between total loan principal and repayment progress for Colombian borrowers. Uses a scatterplot to identify significant contributors, repayment performance, and outliers in the dataset.</p>
       <a href="https://colab.research.google.com/drive/1Eoxe1HY1MP9OlX026hzsxC-JIhgK7fsB?usp=sharing" target="_blank">🚀 Open in Google Colab</a><br>
       <a href="https://github.com/Danielmejiava/danielmejiava.github.io/blob/main/repaymentProgressCol.ipynb" target="_blank">📁 View on GitHub</a>
     </div>
+  </section>
 
+  <!-- Resume Section -->
+  <section id="resume" class="hidden-section">
+    <h3>📄 Resume</h3>
+    <p><strong>Profile:</strong> Data-driven professional with experience in cost analysis, forecasting, and production efficiency. Skilled in Python, SQL, and data mining, with practical knowledge in stochastic modelling, financial derivatives, and investment portfolios.</p>
+    
+    <p><strong>Technical Skills:</strong><br>
+    <strong>Programming:</strong> Python, SQL<br>
+    <strong>Libraries & Tools:</strong> Pandas, Numpy, Matplotlib, Scikit-learn, Excel, Google Colab, Jupyter Notebooks<br>
+    <strong>Techniques:</strong> Forecasting, Data Mining, Cost Analysis, Portfolio Optimization<br>
+    <strong>Soft Skills:</strong> Communication, Teamwork, Time Management, Critical Thinking, Emotional Intelligence</p>
+
+    <h4>Work Experience</h4>
+    <p><strong>Freelance (2019–2021)</strong><br>
+    Applied programming, data analysis, and statistics to improve production time and business efficiency. Contributed to forecasting and strategic planning for various companies including UNICO INTERIOR S.A.S, APL, and NETSTAK.</p>
+
+    <p><strong>Cutting and Integration Coordinator (2018–2019) – Unico Interior S.A.S</strong><br>
+    Improved data recording and input-output efficiency. Managed supply strategies and manufacturing logistics.</p>
+
+    <p><strong>Cost and Budget Analyst (2017–2018) – Unico Interior S.A.S</strong><br>
+    Structured cost systems and analysed cost variation to support decision-making in management and production.</p>
+
+    <p><strong>Data Analyst (2014–2017) – APL Servicios</strong><br>
+    Implemented and parameterised costing software. Delivered timely production cost reports to management.</p>
   </section>
 
   <script>
     function toggleDetails() {
-      const details = document.getElementById("details");
-      const projects = document.getElementById("projects");
-
-      if (details.style.display === "none" || details.style.display === "") {
-        details.style.display = "block";
-        projects.style.display = "none";
-      } else {
-        details.style.display = "none";
-      }
+      document.getElementById("details").style.display =
+        document.getElementById("details").style.display === "block" ? "none" : "block";
+      document.getElementById("projects").style.display = "none";
+      document.getElementById("resume").style.display = "none";
     }
 
     function toggleProjects() {
-      const details = document.getElementById("details");
-      const projects = document.getElementById("projects");
+      document.getElementById("projects").style.display =
+        document.getElementById("projects").style.display === "block" ? "none" : "block";
+      document.getElementById("details").style.display = "none";
+      document.getElementById("resume").style.display = "none";
+    }
 
-      if (projects.style.display === "none" || projects.style.display === "") {
-        projects.style.display = "block";
-        details.style.display = "none";
-      } else {
-        projects.style.display = "none";
-      }
+    function toggleResume() {
+      document.getElementById("resume").style.display =
+        document.getElementById("resume").style.display === "block" ? "none" : "block";
+      document.getElementById("details").style.display = "none";
+      document.getElementById("projects").style.display = "none";
     }
   </script>
 
