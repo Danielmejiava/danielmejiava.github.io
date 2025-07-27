@@ -42,7 +42,7 @@
     }
     .hidden-section {
       display: none;
-      max-width: 700px;
+      max-width: 800px;
       margin: 40px auto;
       text-align: left;
       background-color: #f9f9f9;
@@ -69,10 +69,10 @@
 
   <h1>Daniel Mejía Valencia</h1>
   <h2>
-    <span class="clickable" onclick="toggleDetails()">Financial Engineer</span> |
-    <span class="clickable" onclick="toggleProjects()">Portfolio</span> |
-    <span class="clickable" onclick="toggleResume()">Resume</span> |
-    <span class="clickable" onclick="toggleCourses()">Courses</span>
+    <span class="clickable" onclick="toggleSection('details')">Financial Engineer</span> |
+    <span class="clickable" onclick="toggleSection('projects')">Portfolio</span> |
+    <span class="clickable" onclick="toggleSection('resume')">Resume</span> |
+    <span class="clickable" onclick="toggleSection('courses')">Courses</span>
   </h2>
 
   <div class="icons">
@@ -80,50 +80,10 @@
     <a href="https://linkedin.com/in/danielmejiava" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
 
-  <!-- Resume Section -->
-  <div id="resume" class="hidden-section">
-    <h3>Professional Profile</h3>
-    <p>Data-driven professional with experience in cost analysis, forecasting, and production efficiency. Skilled in Python, SQL, and data mining, with practical knowledge in stochastic modelling, financial derivatives, and investment portfolios. Proven ability to apply data analysis in real business contexts.</p>
-
-    <h4>Technical Skills</h4>
-    <ul>
-      <li><strong>Programming:</strong> Python, SQL</li>
-      <li><strong>Libraries & Tools:</strong> Pandas, Numpy, Matplotlib, Scikit-learn, Excel, Google Colab, Jupyter Notebooks</li>
-      <li><strong>Techniques:</strong> Forecasting, Data Mining, Cost Analysis, Portfolio Optimization</li>
-      <li><strong>Soft Skills:</strong> Communication, Teamwork, Time Management, Critical Thinking, Emotional Intelligence</li>
-    </ul>
-
-    <h4>Work Experience</h4>
-    <ul>
-      <li><strong>Freelance (2019–2021):</strong> Provided data-driven solutions in forecasting, production improvement, and programming across various companies including Unico Interior S.A.S, APL, and NETSTAK.</li>
-      <li><strong>Unico Interior S.A.S</strong>
-        <ul>
-          <li><em>Cutting and Integration Coordinator (2018–2019):</em> Improved data entry recording, time tracking, and strategic KPI reporting.</li>
-          <li><em>Cost and Budget Analyst (2017–2018):</em> Structured cost system, monitored cost variations, supported production and management decisions.</li>
-        </ul>
-      </li>
-      <li><strong>APL Servicios (2014–2017):</strong> Implemented and parameterised costing software. Provided timely cost analysis and reporting.</li>
-    </ul>
-  </div>
-
-  <!-- Courses Section -->
-  <div id="courses" class="hidden-section">
-    <h3>🎓 Coursera Courses</h3>
-    <ul>
-      <li>
-        <a href="https://www.coursera.org/account/accomplishments/verify/CCSOK2FXZEVK" target="_blank">
-          Databases and SQL for Data Science with Python – IBM
-        </a>
-        <br><small>Completed: Jan 9, 2025 — Grade: 85.12%</small>
-      </li>
-      <!-- Add more courses here if needed -->
-    </ul>
-  </div>
-
   <!-- Financial Engineer Section -->
   <div id="details" class="hidden-section">
     <h3>Occupational Profile</h3>
-    <p>The field of action for a Financial Engineer spans all sectors of the economy — including production, mining, banking, financial services, consulting, and more.</p>
+    <p>The field of action for a Financial Engineer spans all sectors of the economy — including production, mining, banking, financial services, consulting, and more. A Financial Engineer may professionally develop in the following roles:</p>
     <ul>
       <li>Financial management analyst in public and private companies</li>
       <li>Financial analyst in brokerage firms, banks, money desks, cooperatives, and fiduciary entities</li>
@@ -142,7 +102,7 @@
     </ul>
   </div>
 
-  <!-- Projects Section -->
+  <!-- Portfolio Section -->
   <section id="projects" class="hidden-section">
     <h3>📈 Projects</h3>
 
@@ -155,41 +115,59 @@
 
     <div>
       <h4>Employment Trends in Greater Brisbane</h4>
-      <p>Analysed employment trends with a focus on gender gaps and part-time roles.</p>
+      <p>Explores gender participation in full-time and part-time employment trends over time.</p>
       <a href="https://colab.research.google.com/drive/1S84N8RXXXtB9uBbNPcMaP6k3xBp7cIJF?usp=sharing" target="_blank">🚀 Open in Google Colab</a><br>
       <a href="https://github.com/Danielmejiava/danielmejiava.github.io/blob/main/WorkforceBrisbane.ipynb" target="_blank">📁 View on GitHub</a>
     </div>
 
     <div>
       <h4>Repayment Progress vs Total Principal (Colombia)</h4>
-      <p>Explored relationship between loan principal and repayment progress for Colombian borrowers.</p>
+      <p>Scatterplot analysis to evaluate loan repayments and identify key outliers.</p>
       <a href="https://colab.research.google.com/drive/1Eoxe1HY1MP9OlX026hzsxC-JIhgK7fsB?usp=sharing" target="_blank">🚀 Open in Google Colab</a><br>
       <a href="https://github.com/Danielmejiava/danielmejiava.github.io/blob/main/repaymentProgressCol.ipynb" target="_blank">📁 View on GitHub</a>
     </div>
   </section>
 
+  <!-- Resume Section -->
+  <section id="resume" class="hidden-section">
+    <h3>🧑‍💼 Resume</h3>
+    <p><strong>Profile:</strong> Data-driven professional with experience in cost analysis, forecasting, and production efficiency. Skilled in Python, SQL, and data mining, with knowledge in stochastic modelling, financial derivatives, and investment portfolios.</p>
+
+    <h4>Technical Skills</h4>
+    <ul>
+      <li><strong>Programming:</strong> Python, SQL</li>
+      <li><strong>Libraries:</strong> Pandas, Numpy, Matplotlib, Scikit-learn, Excel, Google Colab</li>
+      <li><strong>Tools:</strong> Jupyter Notebooks</li>
+      <li><strong>Techniques:</strong> Forecasting, Cost Analysis, Portfolio Optimization</li>
+      <li><strong>Soft Skills:</strong> Communication, Teamwork, Critical Thinking, Emotional Intelligence</li>
+    </ul>
+
+    <h4>Work Experience</h4>
+    <p><strong>Freelancer (2019–2021):</strong> Worked with companies like UNICO INTERIOR S.A.S, APL, and NETSTAK to apply programming, forecasting, and data analysis methods to improve business outcomes.</p>
+
+    <p><strong>Unico Interior S.A.S (2017–2019):</strong> Roles in cost analysis and supply management, including budgeting, time optimisation, and operational decision support.</p>
+
+    <p><strong>APL Servicios (2014–2017):</strong> Led data-driven costing implementations and analysis in production systems.</p>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="hidden-section">
+    <h3>🎓 Courses</h3>
+    <ul>
+      <li><a href="https://www.coursera.org/account/accomplishments/verify/CCSOK2FXZEVK" target="_blank">Databases and SQL for Data Science with Python – IBM (Jan 2025)</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/verify/ZJSLY3NHNGY8" target="_blank">Python for Data Science, AI & Development – IBM (Sep 2022)</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/verify/7K3JZXAKV4FR" target="_blank">Data Science Methodology – IBM (Aug 2022)</a></li>
+    </ul>
+  </section>
+
   <script>
-    function toggleSection(sectionId) {
-      const sections = ['details', 'projects', 'resume', 'courses'];
-      sections.forEach(id => {
-        document.getElementById(id).style.display = (id === sectionId) ? 'block' : 'none';
+    function toggleSection(id) {
+      const sections = ["details", "projects", "resume", "courses"];
+      sections.forEach(section => {
+        document.getElementById(section).style.display = (section === id)
+          ? (document.getElementById(section).style.display === "block" ? "none" : "block")
+          : "none";
       });
-    }
-
-    function toggleDetails() {
-      toggleSection('details');
-    }
-
-    function toggleProjects() {
-      toggleSection('projects');
-    }
-
-    function toggleResume() {
-      toggleSection('resume');
-    }
-
-    function toggleCourses() {
-      toggleSection('courses');
     }
   </script>
 
