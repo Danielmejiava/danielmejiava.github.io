@@ -107,6 +107,13 @@
     <h3>📈 Projects</h3>
 
     <div>
+      <h4>Portfolio Optimization (Markowitz Portfolio)</h4>
+      <p>Constructed and analyzed an investment portfolio using Python, calculating returns, risks, and the Sharpe ratio based on the Markowitz portfolio theory.</p>
+      <a href="https://colab.research.google.com/drive/1Lh_qpPVOi8x8PykRFM3MEGWzIOGXqI7c?usp=sharing" target="_blank">🚀 Open in Google Colab</a><br>
+      <a href="https://github.com/Danielmejiava/PortfolioOptimization" target="_blank">📁 View on GitHub</a>
+    </div>
+
+    <div>
       <h4>Analysis of Temporary Student Visas in Australia</h4>
       <p>Analysed trends in student visa arrivals and departures using Python and public data.</p>
       <a href="https://colab.research.google.com/github/Danielmejiava/danielmejiava.github.io/blob/main/studentVisaArDp.ipynb" target="_blank">🚀 Open in Google Colab</a><br>
@@ -125,13 +132,6 @@
       <p>Scatterplot analysis to evaluate loan repayments and identify key outliers.</p>
       <a href="https://colab.research.google.com/drive/1Eoxe1HY1MP9OlX026hzsxC-JIhgK7fsB?usp=sharing" target="_blank">🚀 Open in Google Colab</a><br>
       <a href="https://github.com/Danielmejiava/danielmejiava.github.io/blob/main/repaymentProgressCol.ipynb" target="_blank">📁 View on GitHub</a>
-    </div>
-
-    <div>
-      <h4>Portfolio Optimization</h4>
-      <p>Simulated portfolios using log-adjusted returns, calculated portfolio risk, return, Sharpe ratios, and visualized results with Plotly.</p>
-      <a href="https://colab.research.google.com/github/Danielmejiava/PortfolioOptimization/blob/main/PortfolioOptimization.ipynb" target="_blank">🚀 Open in Google Colab</a><br>
-      <a href="https://github.com/Danielmejiava/PortfolioOptimization/blob/main/PortfolioOptimization.ipynb" target="_blank">📁 View on GitHub</a>
     </div>
   </section>
 
@@ -162,5 +162,17 @@
     <h3>🎓 Courses</h3>
     <ul>
       <li><a href="https://www.coursera.org/account/accomplishments/verify/CCSOK2FXZEVK" target="_blank">Databases and SQL for Data Science with Python – IBM (Jan 2025)</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/verify/ZJSLY3NHNGY8" target="_blank">Python for Data Science, AI & Development – IBM
+      <li><a href="https://www.coursera.org/account/accomplishments/verify/ZJSLY3NHNGY9" target="_blank">Applied Data Science with Python – University of Michigan (Feb 2025)</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/verify/9C4HEN8XYUZC" target="_blank">Financial Engineering and Risk Management – Columbia University (Mar 2025)</a></li>
+    </ul>
+  </section>
 
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === 'none' || section.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
